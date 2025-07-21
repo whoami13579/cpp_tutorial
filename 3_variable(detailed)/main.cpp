@@ -9,6 +9,9 @@ int main() {
     int i2 = 5.5;
     std::cout << "i2 = " << i2 << std::endl;
 
+    int i3 = -5.5;
+    std::cout << "i3 = " << i3 << std::endl;
+
     // short (-32,768 to 32,767)
     short s = 10;
     std::cout << "s = " << s << std::endl;
@@ -81,6 +84,14 @@ int main() {
     // unsigned long long (0 to 18,446,744,073,709,551,615)
     unsigned long long ull = -1;
     std::cout << "ull = " << ull << std::endl;
+
+
+    std::cout << "----------" << std::endl;
+
+    // constant
+    const float PI = 3.14;
+    std::cout << "PI = " << PI << std::endl;
+    // PI = 1;
 
     return 0;
 }
