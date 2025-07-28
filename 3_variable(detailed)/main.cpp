@@ -16,22 +16,30 @@ int main() {
     short s = 10;
     std::cout << "s = " << s << std::endl;
 
-    short s2 = 32767 + 1; //overflow
-    std::cout << "s = " << s2 << std::endl;
+    short s2 = 32767; //overflow
+    s2  = s2 + 1;
+    std::cout << "s2 = " << s2 << std::endl;
+
+    short s3 = -32768;
+    s3 = s3 - 1;
+    std::cout << "s3 = " << s3 << std::endl;
 
     // long long (-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
-    long long ll = 123;
+    long long ll = 32767 + 1;
     std::cout << "ll = " << ll << std::endl;
 
     
     std::cout << "----------" << std::endl;
 
-    // float
+    // float 3.4E +/- 38 (seven digits)
     float f = 5;
     std::cout << "f = " << f << std::endl;
 
     float f2 = 1.5;
     std::cout << "f2 = " << f2 << std::endl;
+
+    // double 1.7E +/- 308 (fifteen digits)
+    double d;
 
     std::cout << "----------" << std::endl;
 
@@ -56,6 +64,10 @@ int main() {
 
     std::cout << "str + str2 = " << str + " " + str2 << std::endl;
 
+    str = "1";
+    str2 = "2";
+    std::cout << "str + str2 = " << str + str2 << std::endl;
+
     std::cout << "----------" << std::endl;
 
     // bool
@@ -77,7 +89,8 @@ int main() {
 
     // short (-32,768 to 32,767)
     // unsigned short (0 to 65,535)
-    unsigned short us = 65535 + 1;
+    unsigned short us = 65535;
+    us = us + 1;
     std::cout << "us = " << us << std::endl;
 
     // long long (-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
